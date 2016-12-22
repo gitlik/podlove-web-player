@@ -553,7 +553,7 @@ if (typeof String.prototype.trim !== 'function') {
         return false;
       });
       wrapper.find('.currentbutton').click(function () {
-        var timepos = (params.sharewholeepisode === true) ? '' : '%23t%3D' + generateTimecode([player.currentTime]);
+        var timepos = (params.sharewholeepisode === true) ? '' : '#t=' + generateTimecode([player.currentTime]);
         window.prompt('This URL directly points to this episode on the current time', $(this).closest('.podlovewebplayer_wrapper').find('.episodetitle a').attr('href') + timepos);
         return false;
       });
