@@ -61,7 +61,7 @@ function podlovewebplayer_add_scripts() {
 		array(), '2.1.1', false
 	);
 }
-add_action('wp_print_scripts', 'podlovewebplayer_add_scripts');
+add_action('wp_enqueue_scripts', 'podlovewebplayer_add_scripts');
 
 /* embed css files */
 
